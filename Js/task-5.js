@@ -1,29 +1,29 @@
 //ВАРАИАНТ 1 ------
 
 const checkForSpam = function (message) {
-    let arr = message.toLowerCase('');
+  let arr = message.toLowerCase("");
 
-    if (arr.includes('sale', 'spam')) {
-        return true;
-    }
-    else if (arr.includes('spam')) {
-        return true;
-    }
-    else {
-        return false;
-    }
-    };
+  if (arr.includes("sale") || arr.includes("spam")) {
+    return true;
+  }
+  // else if (arr.includes('spam')) {
+  //     return true;
+  // }
+  else {
+    return false;
+  }
+};
 
 /*
  * Вызовы функции для проверки работоспособности твоей реализации.
  */
-console.log(checkForSpam('Latest technology news')); // false
+console.log(checkForSpam("Latest technology news")); // false
 
-console.log(checkForSpam('JavaScript weekly newsletter')); // false
+console.log(checkForSpam("JavaScript weekly newsletter")); // false
 
-console.log(checkForSpam('Get best sale offers now!')); // true
+console.log(checkForSpam("Get best sale offers now!")); // true
 
-console.log(checkForSpam('[SPAM] How to earn fast money?')); // true
+console.log(checkForSpam("[SPAM] How to earn fast money?")); // true
 
 //ВАРАИАНТ 2 ------
 
@@ -36,8 +36,7 @@ console.log(checkForSpam('[SPAM] How to earn fast money?')); // true
 //         }
 //     }
 //             return false;
-        
-    
+
 //     };
 
 // /*
